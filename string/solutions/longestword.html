@@ -1,0 +1,25 @@
+<html>
+<title>CoderDojo - Javascript</title>
+
+<body>
+    Write a function that returns the longest word in a sentence.
+</body>
+
+<script>
+    function longestWord(sentence) {
+
+        var array = sentence.split(' ');
+        var result = array[0];
+
+        for (var x = 1; x < array.length; x++) {
+            if (result.length < array[x].length) {
+                result = array[x];
+            }
+        }
+
+        return result;
+    }
+    alert(longestWord('CoderDojo Web Development Tutorial'));
+</script>
+
+</html>

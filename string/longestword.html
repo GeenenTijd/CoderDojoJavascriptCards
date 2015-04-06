@@ -1,0 +1,70 @@
+<html>
+
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">4</div>
+        <div class="left">
+            <h1>Find the longest word</h1>
+            <p>We are going to write a function that returns the longest word for a given sentence.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+var str = 'How are you doing today?';
+var res = str.split(' ');
+
+</code></pre>
+            <p class="result">Result: How, are, you, doing, today?</p>
+        </div>
+        <div class="right">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"><h2>Split Method</h2></a>
+            <pre><code class="javascript">str.split(separator)</code></pre>
+            <p>Javascript has a split method for string. This method will split a string into an array (collection) of substrings. The first parameter is the separator for the string.</p>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="left">
+            <h2>longestWord function</h2>
+
+            <p>You can see how we create the function longestWord and how we call longestWord to test the code. Now you have to fill the function and return the longest word. We'll have to split sentence in an array and search for the longest word.</p>
+        </div>
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code>function longestWord(sentence) {
+
+}
+
+alert(longestWord('I am the best'));
+</code></pre>
+        </div>
+
+    </section>
+
+
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</html>

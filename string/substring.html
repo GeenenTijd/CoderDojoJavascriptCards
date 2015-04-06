@@ -1,0 +1,100 @@
+<html>
+
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">1</div>
+        <div class="left">
+            <h1>Substring</h1>
+            <p>We are going to get some letters from a string.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+
+    <section>
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+var anyString = 'CoderDojo';
+
+console.log(anyString.substring(0, 3));
+// 'Cod'
+
+console.log(anyString.substring(5, 7));
+// 'Do'
+
+</code></pre>
+        </div>
+        <div class="right">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring"><h2>Substring Method</h2></a>
+            <pre><code class="javascript">str.substring(indexA, indexB)</code></pre>
+            <p>substring() extracts characters from indexA up to but not including indexB.</p>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="left">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length"><h2>length property</h2></a>
+            <pre><code class="javascript">str.length</code></pre>
+            <p>length is a property of string that returns the amount of characters in the string.</p>
+        </div>
+
+        <div class="right">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+var str = 'CoderDojo';
+
+console.log(str + ' is ' + str.length + ' long');
+// 'CoderDojo is 9 long'
+
+</code></pre>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code class="html">
+&lt;html&gt;
+&lt;script&gt;
+    var myString = 'Hello World';
+    console.log(myString);
+&lt;/script&gt;
+&lt;/html&gt;
+
+</code></pre>
+        </div>
+
+        <div class="right">
+            <h2>Writing Code</h2>
+
+            <p>You can write javascript in a html page. You just add a <code>&lt;script&gt;&lt;/script&gt;</code> tag and write your code within the script tag.</p>
+
+            <p><code>console.log(str)</code> will print a string to your console, you can see your console in the browser by pressing F12.</p>
+        </div>
+
+    </section>
+
+</div>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+<title>CoderDojo - Javascript</title>
+
+<body>
+    Capitalize the first letter of every word.
+</body>
+<script>
+    function uppercase(str) {
+
+        var array = str.split(' ');
+
+        for (var x = array.length - 1; x >= 0; --x) {
+            array[x] = array[x].charAt(0).toUpperCase() + array[x].slice(1);
+        }
+
+        return array.join(' ');
+
+    }
+    alert(uppercase("the quick brown fox"));
+</script>
+
+</html>

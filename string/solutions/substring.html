@@ -1,0 +1,18 @@
+<html>
+<title>CoderDojo - Javascript</title>
+
+<body>
+    First we print the three first letter from 'Hello World'. When this is done we print the last two letters from 'Programmer'.
+</body>
+<script>
+    console.log('Hello World'.substring(0, 3));
+
+    // OK
+    console.log('Programmer'.substring(8, 10));
+
+    // BETTER
+    var word = 'Programmer';
+    console.log(word.substring(word.length - 2, word.length));
+</script>
+
+</html>

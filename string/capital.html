@@ -1,0 +1,97 @@
+<html>
+
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">6</div>
+        <div class="left">
+            <h1>Capitalize</h1>
+            <p>Capitalize the first letter of every word.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+
+console.log('alphabet'.toUpperCase());
+// 'ALPHABET'
+
+</code></pre>
+        </div>
+        <div class="right">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"><h2>toUpperCase Method</h2></a>
+            <pre><code class="javascript">str.toUpperCase()</code></pre>
+            <p>The toUpperCase() method returns the calling string value converted to uppercase.</p>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="left">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice"><h2>Slice Method</h2></a>
+
+            <pre><code class="javascript">str.slice(beginIndex, endIndex)</code></pre>
+
+            <p>The slice() method extracts a section of a string and returns a new string.</p>
+        </div>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code>var str = 'The morning is upon us.';
+
+console.log(str.slice(0, 3));
+// 'The'
+
+console.log(str.slice(4, -4));
+// 'morning is upon'
+
+</code></pre>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code>function uppercase(str) {
+
+}
+
+alert(uppercase("the quick brown fox"));
+</code></pre>
+        </div>
+
+        <div class="left">
+            <h2>uppercase function</h2>
+
+            <p>You can see how we create the function uppercase and how we call uppercase to test the code. Now you have to fill the function and return the capitalized string. We can split str in an array so we can loop over every word.</p>
+        </div>
+
+
+    </section>
+
+
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">2</div>
+        <div class="left">
+            <h1>Letter count</h1>
+            <p>Write a function that counts how many times a given letter is in a given string.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+
+    <section>
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+var anyString = 'CoderDojo';
+
+console.log(anyString.charAt(0));
+// 'C'
+
+console.log(anyString.charAt(5));
+// 'D'
+
+</code></pre>
+        </div>
+        <div class="right">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt"><h2>charAt Method</h2></a>
+            <pre><code class="javascript">str.charAt(index)</code></pre>
+            <p>The charAt() method returns the character at location index from a string.</p>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <h2>Writing a function</h2>
+
+            <p>You can see how we have written the function letterCount and how we call it. When you see return the function gives back what is written behind the return.</p>
+
+            <p>Now it's up to you to count how many times letter is in str. You can loop over str and compare the characters.</p>
+
+            <p><code>alert(str)</code> shows a popup with given string.
+            </p>
+        </div>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code class="javascript">
+function letterCount(str, letter) {
+    var count = 0;
+
+    return count;
+}
+alert(letterCount('Hello World', 'o'));
+
+</code></pre>
+        </div>
+
+    </section>
+
+</div>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</html>

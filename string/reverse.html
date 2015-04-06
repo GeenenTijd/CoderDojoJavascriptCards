@@ -1,0 +1,95 @@
+<html>
+
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">5</div>
+        <div class="left">
+            <h1>Reverse a string</h1>
+            <p>We are going to write a function that reverses a given string.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+var myArray = ['one', 'two', 'three'];
+myArray.reverse(); 
+
+console.log(myArray)
+// ['three', 'two', 'one']
+
+</code></pre>
+        </div>
+        <div class="right">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"><h2>Reverse Method</h2></a>
+            <pre><code class="javascript">arr.reverse()</code></pre>
+            <p>Javascript has a reverse method for array. This method will reverse the array.</p>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="left">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"><h2>Join Method</h2></a>
+
+            <pre><code class="javascript">str = arr.join(separator)</code></pre>
+
+            <p>Javascript has a join method for array. This method returns a string with all elements in the array behind eachother separated by the given separator.</p>
+        </div>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code>var a = ['Wind', 'Rain', 'Fire'];
+
+console.log(a.join(', '));
+// 'Wind, Rain, Fire'
+</code></pre>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code>function reverseWord(word) {
+
+}
+
+alert(reverseWord('CoderDojo'));
+</code></pre>
+        </div>
+
+        <div class="left">
+            <h2>reverseWord function</h2>
+
+            <p>You can see how we create the function reverseWord and how we call reverseWord to test the code. Now you have to fill the function and return the reversed word. We'll have to split word in an array so we can use the methods listed above.</p>
+        </div>
+
+
+    </section>
+
+
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</html>

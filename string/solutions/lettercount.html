@@ -1,0 +1,20 @@
+<html>
+<title>CoderDojo - Javascript</title>
+
+<body>
+    Write a function that counts how many times a given letter is in a given string.
+</body>
+<script>
+    function letterCount(str, letter) {
+        var count = 0;
+        for (var position = 0; position < str.length; position++) {
+            if (str.charAt(position) === letter) {
+                ++count;
+            }
+        }
+        return count;
+    }
+    alert(letterCount('Hello World', 'o'));
+</script>
+
+</html>

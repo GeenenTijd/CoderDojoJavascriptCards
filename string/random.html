@@ -1,0 +1,89 @@
+<html>
+
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">3</div>
+        <div class="left">
+            <h1>Random string</h1>
+            <p>Write a function that returns a random string with given length.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+
+    <section>
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+
+// Returns a random integer
+// Result between min (included) and max (excluded)
+
+function getRandomNumber(min, max) {
+    var x = Math.random() * (max - min);
+    return Math.floor(x) + min;
+}
+
+</code></pre>
+        </div>
+        <div class="left">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"><h2>Math.random</h2></a>
+            <pre><code class="javascript">Math.random()</code></pre>
+            <p>Returns a random number between 0 and 1.</p>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"><h2>Math.floor</h2></a>
+            <pre><code class="javascript">Math.floor(x)</code></pre>
+            <p>The Math.floor() function returns the largest integer less than or equal to a given number.</p>
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <h2>Writing a function</h2>
+
+            <p>You can see how we have written the function randomString and how we call it. When you see return the function gives back what is written behind the return.</p>
+
+            <p>Now it's up to you to create a string with the given length. You can create a string that contains all characters you want to use. Then you can get a random character from this string for x times.</p>
+
+            <p><code>alert(str)</code> shows a popup with given string.
+            </p>
+        </div>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code class="javascript">
+function randomString(x) {
+
+    var text = 'IGoBack';
+    return text;
+    
+}
+
+alert(randomString(10));
+
+</code></pre>
+        </div>
+
+    </section>
+
+</div>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</html>
