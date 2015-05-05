@@ -1,22 +1,59 @@
 <html>
-<title>CoderDojo - Javascript</title>
 
-<body>
-    Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
-</body>
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">3</div>
+        <div class="left">
+            <h1>Greatest Common Divisor</h1>
+            <p>Find the greatest common divisor between two numbers.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <h2>Writing a function</h2>
+
+            <p>You can see how we have written the function gcd and how we call it. When you see return the function gives back what is written behind the return.</p>
+
+            <p>Now it's up to you to return an integer between a and b.</p>
+
+            <p><code>alert(str)</code> shows a popup with given string.
+            </p>
+        </div>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code class="javascript">
+function gcd(a, b) {
+
+    // Complete method
+    
+}
+
+alert(gcd(6, 9));
+
+</code></pre>
+        </div>
+
+    </section>
+
+</div>
 <script>
-    function gcd(a, b) {
-        while (a != b) {
-            if (a > b) {
-                a = a - b;
-            } else {
-                b = b - a;
-            }
-        }
-        return a;
-    }
-
-    alert(gcd(1356, 579));
+    hljs.initHighlightingOnLoad();
 </script>
 
 </html>

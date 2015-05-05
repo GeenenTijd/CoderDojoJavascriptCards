@@ -1,18 +1,91 @@
 <html>
-<title>CoderDojo - Javascript</title>
 
-<body>
-    Guess a number.
-</body>
+<link rel="stylesheet" href="../screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../screen.css" type="text/css" media="print" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<script src="../highlight.pack.js"></script>
+
+<div class="container">
+    <header>
+        <img class="logo" src="../images/coderdojo-logo.svg" />
+    </header>
+    <div class="border"></div>
+
+    <section>
+        <div class="left circle">3</div>
+        <div class="left">
+            <h1>Random number</h1>
+            <p>Write a function that returns a random number between a and b.</p>
+        </div>
+        <div class="right">
+            <img src="../images/JavaScript-logo.png" />
+        </div>
+    </section>
+
+
+    <section>
+        <div class="left">
+            <img src="../images/code.svg" />
+
+            <pre><code class="javascript">
+
+// Returns between 0 and 1
+Math.random();
+
+// Returns between 0 and 100
+Math.random() * 100;
+
+// Returns integer between 0 and 100
+Math.floor(Math.random() * 100);
+
+
+</code></pre>
+        </div>
+        <div class="left">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"><h2>Math.random</h2></a>
+            <pre><code class="javascript">Math.random()</code></pre>
+            <p>Returns a random number between 0 and 1.</p>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"><h2>Math.floor</h2></a>
+            <pre><code class="javascript">Math.floor(x)</code></pre>
+            <p>The Math.floor() function returns the largest integer less than or equal to a given number.</p>
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="left">
+            <h2>Writing a function</h2>
+
+            <p>You can see how we have written the function randomNumber and how we call it. When you see return the function gives back what is written behind the return.</p>
+
+            <p>Now it's up to you to return an integer between a and b.</p>
+
+            <p><code>alert(str)</code> shows a popup with given string.
+            </p>
+        </div>
+
+        <div class="left">
+            <img src="../images/code.svg" />
+            <pre><code class="javascript">
+function randomNumber(a, b) {
+
+    // Complete method
+    return a;
+    
+}
+
+alert(randomNumber(10, 20));
+
+</code></pre>
+        </div>
+
+    </section>
+
+</div>
 <script>
-    // Get a random integer from 1 to 10 inclusive
-    var randomNumber = Math.ceil(Math.random() * 10);
-    var inputNumber = prompt('Guess the number between 1 and 10 inclusive');
-    if (randomNumber === inputNumber) {
-        alert('Matched');
-    } else {
-        alert('Not matched, the number was ' + num);
-    }
+    hljs.initHighlightingOnLoad();
 </script>
 
 </html>
