@@ -14,8 +14,8 @@
     <section>
         <div class="left circle">3</div>
         <div class="left">
-            <h1>isOdd</h1>
-            <p>Write a function that returns a random number between a and b.</p>
+            <h1>Array</h1>
+            <p>Create an array with n random numbers.</p>
         </div>
         <div class="right">
             <img src="../images/JavaScript-logo.png" />
@@ -29,23 +29,29 @@
 
             <pre><code class="javascript">
 
-6 % 4
-// 2
+var array = [0, 1, 2, 3];
 
-9 % 3
-// 0
-
-7 % 6
+array[1]
 // 1
 
+array[3]
+// 3
+
+array.push(4);
+
+array[4];
+//4
 
 </code></pre>
         </div>
         <div class="left">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"><h2>Array</h2></a>
+            <pre><code class="javascript">[1, 2, 3]</code></pre>
+            <p>Arrays are list-like objects. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's size length grow or shrink at any time</p>
 
-            <a href="http://en.wikipedia.org/wiki/Modulo_operation"><h2>Modulo</h2></a>
-            <pre><code class="javascript">10 % 7</code></pre>
-            <p>The modulo operation finds the remainder after division of one number by another (sometimes called modulus).</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"><h2>Push</h2></a>
+            <pre><code class="javascript">array.push(4)</code></pre>
+            <p>The push() method adds new items to the end of an array, and returns the new length.</p>
 
         </div>
     </section>
@@ -66,13 +72,13 @@
         <div class="left">
             <img src="../images/code.svg" />
             <pre><code class="javascript">
-function isOdd(x) {
+function randomArray(n) {
 
     // Complete method
     
 }
 
-alert(isOdd(10));
+alert(randomArray(10));
 
 </code></pre>
         </div>
