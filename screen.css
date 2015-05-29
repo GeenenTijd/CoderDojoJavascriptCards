@@ -80,6 +80,10 @@ h2 {
     margin: 20px 20px;
 }
 
+code {
+    min-width: 250px;
+}
+
 section {
     clear: both;
 }

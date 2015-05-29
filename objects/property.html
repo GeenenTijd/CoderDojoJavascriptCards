@@ -14,8 +14,8 @@
     <section>
         <div class="left circle">2</div>
         <div class="left">
-            <h1>isOdd</h1>
-            <p>Write a function that returns a random number between a and b.</p>
+            <h1>Object Properties</h1>
+            <p>Use object properties.</p>
         </div>
         <div class="right">
             <img src="../images/JavaScript-logo.png" />
@@ -29,50 +29,57 @@
 
             <pre><code class="javascript">
 
-6 % 4
-// 2
+var obj1 = {
+    name: 'CoderDojo'
+}
 
-9 % 3
-// 0
+var obj2 = {
+    name: 'CoderDojo',
+    age: 12
+}
 
-7 % 6
-// 1
+var obj3 = {
+    thisIsTheNameOfMyProperty: 'thisIsTheValue',
+    cool: true
+}
 
+obj2.name
+// CoderDojo
 
 </code></pre>
         </div>
         <div class="left">
-
-            <a href="http://en.wikipedia.org/wiki/Modulo_operation"><h2>Modulo</h2></a>
-            <pre><code class="javascript">10 % 7</code></pre>
-            <p>The modulo operation finds the remainder after division of one number by another (sometimes called modulus).</p>
-
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"><h2>Object</h2></a>
+            <pre><code class="javascript">var obj = {name: 'CoderDojo'}</code></pre>
+            <p>An object is a list of properties, these properties have a name (name) and a value (CoderDojo). You can access a property by typing a dot. To get the name of obj we can type: obj.name</p>
         </div>
     </section>
 
     <section>
 
         <div class="left">
-            <h2>Writing a function</h2>
+            <h2>Writing some code</h2>
 
-            <p>You can see how we have written the function randomNumber and how we call it. When you see return the function gives back what is written behind the return.</p>
+            <p>You can see we have a car object and a person object. Can you check if the person has enough money to buy the car?</p>
 
-            <p>Now it's up to you to return an integer between a and b.</p>
-
-            <p><code>alert(str)</code> shows a popup with given string.
+            <p><code>console.log(obj)</code> logs obj in your console. You can open your console in your browser with F12 or CTRL+SHIFT+J.
             </p>
         </div>
 
         <div class="left">
             <img src="../images/code.svg" />
             <pre><code class="javascript">
-function isOdd(x) {
 
-    // Complete method
-
+var car = {
+    color: 'red',
+    price: 10000,
+    name: 'cool'
 }
 
-alert(isOdd(10));
+var person = {
+    money: 5000,
+    name: 'CoderDojo'
+}
 
 </code></pre>
         </div>
